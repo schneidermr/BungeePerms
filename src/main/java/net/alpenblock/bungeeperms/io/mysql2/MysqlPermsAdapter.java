@@ -55,7 +55,7 @@ public class MysqlPermsAdapter
                            + "`world` VARCHAR( 64 ) DEFAULT NULL, "
                            + "`timedstart` TIMESTAMP NULL DEFAULT NULL, "
                            + "`timedduration` INT(11) DEFAULT NULL "
-                           + ") ENGINE = MYISAM ;";
+                           + ");";
                 mysql.checkConnection();
                 stmt = mysql.stmt(t);
                 mysql.runQuery(stmt);

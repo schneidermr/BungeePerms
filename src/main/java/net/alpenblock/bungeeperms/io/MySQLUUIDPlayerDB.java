@@ -61,7 +61,7 @@ public class MySQLUUIDPlayerDB implements UUIDPlayerDB
                            + "`id` INT( 64 ) NOT NULL AUTO_INCREMENT PRIMARY KEY ,"
                            + "`uuid` VARCHAR( 40 ) NOT NULL UNIQUE KEY,"
                            + "`player` VARCHAR( 20 ) NOT NULL UNIQUE KEY"
-                           + ") ENGINE = MYISAM ;";
+                           + ");";
                 mysql.checkConnection();
                 stmt = mysql.stmt(t);
                 mysql.runQuery(stmt);
